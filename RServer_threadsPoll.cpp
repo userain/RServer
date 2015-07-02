@@ -18,7 +18,7 @@
         taskQueue = queue;
         pthread_t pt;
         for(int i=0;i<nums;++i){          //创建线程池中的线程
-            while(pthread_create(&pt,NULL,routine,NULL)!=0);
+            while(pthread_create(&pt,NULL,routine,NULL)!=0);        //启动的线程执行routine函数
             threadsList.push_back(pt);
         }
           
